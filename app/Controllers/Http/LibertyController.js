@@ -1,5 +1,5 @@
 'use strict'
-console.log('Begning data extraction ----->');
+console.log('Begning LIBERTY extraction ----->');
 
 const curl = require('curl');
 const jsdom = require("jsdom");
@@ -38,6 +38,8 @@ class LibertyController {
     const {
       url
     } = request.all();
+    console.log('A URL que ta chegando aqui', url);
+
 
     await curl.get(url, null, (err, resp, body) => {
       if (resp.statusCode == 200) {
