@@ -22,3 +22,4 @@ Route.get('/', ({ request }) => {
 Route.post('/sulamerica', 'SulamericaController.store')
 Route.post('/mapfre', 'MapfreController.store')
 Route.post('/hdi', 'HdiController.store')
+Route.post('/liberty', 'LibertyController.store')
