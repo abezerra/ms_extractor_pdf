@@ -108,7 +108,7 @@ class MapfreController {
         }
         const mp = use('App/Models/Mapfre');
 
-        var created =  await mp.create(xpto);
+        var created =  mp.create(xpto);
         console.log(created)
         return created
       } else {
